@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aron Joji</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-/cX6wuapX+2VraGzc7tZySvzZa7U2JjQpdumvgmlAZfJUnmOyV+GskQ7BYKHLqZ5PTklNj1y1fEcNqwt1weRRg==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!--<h1><a href="index.html">Spectral</a></h1>-->
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#two" id="am">About me</a></li>
+											<li><a href="#three" id="skills">Skills</a></li>
+											<li><a href="#cta" id="cta">contact me</a></li>
+											<!--<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<section id="banner">
+						<div class="inner">
+							<h2>WELCOME</h2>
+							<p>Hi there! I'm Aron <br>Welcome to my Portfolio <br> <!-- <a href="http://html5up.net">HTML5 UP</a>.</p> -->
+							<ul class="actions special">
+								<li><a href="#" class="button primary" id="activateBtn">About me</a></li>
+							</ul>
+						</div>
+						<a href="#two" class="more scrolly"></a>
+					</section>
+					
+					<!-- About Me Section -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images\DSC02397 - Copy.JPG" alt="" /></div>
+							<div class="content">
+								<h2>About Me</h2>
+								<p>Hi there! I'm Aron, a passionate programmer with a freshly minted Bachelor's degree in Computer Applications (BCA). I thrive on turning ideas into reality through code and creativity. My journey in the world of programming has been fueled by curiosity and a relentless drive for continuous learning.
+					
+									During my BCA studies, I've delved into various programming languages and technologies, honing my skills in web development, software engineering, and problem-solving. I've tackled challenging projects, collaborated with peers, and embraced the ever-evolving nature of the tech industry.
+					
+									Now, I'm eager to embark on new adventures, leveraging my skills and knowledge to create innovative solutions and contribute meaningfully to the world of software development.
+								</p>
+							</div>
+						</section>
+					</section>
+					
+					<script>
+						document.getElementById('activateBtn').addEventListener('click', function(event) {
+							event.preventDefault();
+							smoothScroll('#two');
+						});
+					
+						function smoothScroll(target) {
+							var targetElement = document.querySelector(target);
+							window.scrollTo({
+								top: targetElement.offsetTop,
+								behavior: 'smooth'
+							});
+						}
+					</script>
+					<script>
+						document.getElementById('am').addEventListener('click', function(event) {
+							event.preventDefault();
+							smoothScroll('#two');
+						});
+					
+						function smoothScroll(target) {
+							var targetElement = document.querySelector(target);
+							window.scrollTo({
+								top: targetElement.offsetTop,
+								behavior: 'smooth'
+							});
+						}
+					</script>
+					<script>
+						document.getElementById('skills').addEventListener('click', function(event) {
+							event.preventDefault();
+							smoothScroll('#three');
+						});
+					
+						function smoothScroll(target) {
+							var targetElement = document.querySelector(target);
+							window.scrollTo({
+								top: targetElement.offsetTop,
+								behavior: 'smooth'
+							});
+						}
+					</script>
+					<script>
+						document.getElementById('cta').addEventListener('click', function(event) {
+							event.preventDefault();
+							smoothScroll('#cta');
+						});
+					
+						function smoothScroll(target) {
+							var targetElement = document.querySelector(target);
+							window.scrollTo({
+								top: targetElement.offsetTop,
+								behavior: 'smooth'
+							});
+						}
+					</script>
+					
+					<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Programming Skills</h2>
+								<p>Here are some of the programming skills I bring to the table:</p>
+							</header>
+							<ul class="features">
+								<li class="fab fa-php">
+									<h3>PHP</h3>
+									<p>I have extensive experience in PHP development, including building dynamic websites and web applications.</p>
+								</li>
+								<li class="fas fa-file-code">
+									<h3>HTML</h3>
+									<p>Proficient in HTML for creating the structure and content of web pages.</p>
+								</li>
+								<li class="fas fa-terminal">
+									<h3>CSS</h3>
+									<p>Skilled in CSS for styling and designing visually appealing websites.</p>
+								</li>
+								<li class="fab fa-python">
+									<h3>Python</h3>
+									<p>Knowledgeable in Python programming for various applications including web development, scripting, and data analysis.</p>
+								</li>
+								
+								<!-- Add more skills as needed -->
+							</ul>
+						</div>
+					</section>
+					
+					<!--nxt!-->
+				
+						
+				
+
+				<!-- CTA -->
+				<section id="cta" class="wrapper style4">
+					<div class="inner">
+						<header>
+							<h2>Contact Me</h2>
+							<p>Feel free to reach out to me via email:</p>
+						</header>
+						<form action="aronjoji8@gmail.com" method="post" enctype="text/plain">
+							<input type="submit" value="Send Email" class="button fit primary">
+						</form>
+					</div>
+				</section>
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://github.com/aronjoji" class="icon brands fab fa-github"><span class="label">github</span></a></li>
+							<li><a href="https://www.instagram.com/aron.joji/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li>
+								<a href="mailto:aronjoji8@gmail.com" class="icon solid fa-envelope" aria-label="Email">
+									<span class="label">Email</span>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="copyright">
+							<li>&copy; ARON JOJI <br><br> 2024</li> <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+					anchor.addEventListener('click', function (e) {
+						e.preventDefault();
+			
+						const targetId = this.getAttribute('href');
+			
+						document.querySelector(targetId).scrollIntoView({
+							behavior: 'smooth',
+							block: 'center'
+						});
+					});
+				});
+			</script>
+	</body>
+</html>
