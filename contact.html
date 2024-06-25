@@ -236,47 +236,47 @@
       </div>
       <div class="row once-in">
          <div class="flex-col">
-            <form class="form" id="myForm"  enctype="multipart/form-data" novalidate>
-               <div class="website-field">
-                  <label class="label" for="tel">Phone Number</label>
-                  <input class="field" type="text" id="form-tel" name="tel" tabindex="-1">
-               </div>
-               <div class="form-col">
-                  <h5>01</h5>
-                  <label class="label" for="name">What's your name?</label>
-                  <input class="field" type="text" id="form-name" name="name" value="" required placeholder="John Doe *">
-                                 </div>
-               <div class="form-col">
-                  <h5>02</h5>
-                  <label class="label" for="email">What's your email?</label>
-                  <input class="field" type="email" id="form-email" name="email" value="" required placeholder="john@doe.com *">
-                                 </div>
-               <div class="form-col">
-                  <h5>03</h5>
-                  <label class="label" for="email">What's the name of your organization?</label>
-                  <input class="field" type="text" id="form-company" name="company" value="" required placeholder="John & Doe ®">
-                                 </div>
-               <div class="form-col">
-                  <h5>04</h5>
-                  <label class="label" for="email">What services are you looking for?</label>
-                  <input class="field" type="text" id="form-service" name="service" value="" required placeholder="Web Design, Web Development ...">
-                                 </div>
-               <div class="form-col">
-                  <h5>05</h5>
-                  <label class="label" for="message">Your message</label>
-                  <textarea class="field" type="text" id="form-message" name="message" rows="8"  required placeholder="Hello Aron, can you help me with ... *"></textarea>
-                                 </div>
-               <div class="btn-contact-send">
-                  <div class="btn btn-round" data-scroll data-scroll-speed="2" data-scroll-offset="-50%, 0%">
-                     <div class="btn-click magnetic" data-strength="100" data-strength-text="50">
-                        <div class="btn-fill"></div>
-                        <span class="btn-text">
-                           <input type="submit" name="submit" value="Send it!" class="form-btn">
-                        </span>
-                     </div>
-                  </div>
-               </div>
-            </form>
+            <form class="form" method="post" action="https://formspree.io/f/xjkbbpjd" enctype="multipart/form-data" novalidate>
+   <div class="website-field">
+      <label class="label" for="tel">Phone Number</label>
+      <input class="field" type="text" id="form-tel" name="tel" tabindex="-1">
+   </div>
+   <div class="form-col">
+      <h5>01</h5>
+      <label class="label" for="name">What's your name?</label>
+      <input class="field" type="text" id="form-name" name="name" required placeholder="John Doe *">
+   </div>
+   <div class="form-col">
+      <h5>02</h5>
+      <label class="label" for="email">What's your email?</label>
+      <input class="field" type="email" id="form-email" name="email" required placeholder="john@doe.com *">
+   </div>
+   <div class="form-col">
+      <h5>03</h5>
+      <label class="label" for="company">What's the name of your organization?</label>
+      <input class="field" type="text" id="form-company" name="company" required placeholder="John & Doe ®">
+   </div>
+   <div class="form-col">
+      <h5>04</h5>
+      <label class="label" for="service">What services are you looking for?</label>
+      <input class="field" type="text" id="form-service" name="service" required placeholder="Web Design, Web Development ...">
+   </div>
+   <div class="form-col">
+      <h5>05</h5>
+      <label class="label" for="message">Your message</label>
+      <textarea class="field" id="form-message" name="message" rows="8" required placeholder="Hello Dennis, can you help me with ... *"></textarea>
+   </div>
+   <div class="btn-contact-send">
+      <div class="btn btn-round" data-scroll data-scroll-speed="2" data-scroll-offset="-50%, 0%">
+         <div class="btn-click magnetic" data-strength="100" data-strength-text="50">
+            <div class="btn-fill"></div>
+            <span class="btn-text">
+               <input type="submit" name="submit" value="Send it!" class="form-btn">
+            </span>
+         </div>
+      </div>
+   </div>
+</form>
             <script>
                 document.getElementById("myForm").addEventListener("submit", function(event) {
                    // Prevent default form submission behavior
