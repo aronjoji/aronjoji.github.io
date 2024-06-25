@@ -236,7 +236,7 @@
       </div>
       <div class="row once-in">
          <div class="flex-col">
-            <form class="form" method="post" action="https://formspree.io/f/xjkbbpjd" enctype="multipart/form-data" novalidate>
+            <form id="contactForm" class="form" method="post" action="https://formspree.io/f/xjkbbpjd" enctype="multipart/form-data" novalidate>
    <div class="website-field">
       <label class="label" for="tel">Phone Number</label>
       <input class="field" type="text" id="form-tel" name="tel" tabindex="-1">
@@ -277,14 +277,42 @@
       </div>
    </div>
 </form>
+		 <div id="successMessage" style="display: none;">
+   <h3>Thank you for your message!</h3>
+   <p>We'll get back to you soon.</p>
+</div>
             <script>
-                document.getElementById("myForm").addEventListener("submit", function(event) {
-                   // Prevent default form submission behavior
-                   event.preventDefault();
-             
-                   // Redirect to index.html
-                   window.location.href = "index.html";
-                });
+               document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('contactForm');
+    var successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+            } else {
+                alert('There was an error submitting the form. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error submitting the form. Please try again.');
+        });
+    });
+});
              </script>
          </div>
          <div class="flex-col">
